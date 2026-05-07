@@ -10,7 +10,7 @@
   --gray-text:   #444444;
   --gray-light:  #f4f4f4;
   --white:       #ffffff;
-  --radius:      4px;
+  --radius:      6.5px;
   --font-jp: 'Hiragino Kaku Gothic ProN', 'Meiryo', 'MS PGothic';
 }
 
@@ -20,18 +20,16 @@ body { font-family: var(--font-jp); font-size: 13px; color: var(--black); backgr
 a { color: var(--blue-mid); text-decoration: none; }
 a:hover { text-decoration: underline; color: var(--orange); }
 
-/* ── Top Bar ── */
 #topbar {
-  background: var(--blue-dark);
-  color: var(--white);
-  font-size: 11px;
-  padding: 3px 12px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; 
+  align-items: center;      
+  padding: 3px 12px;
   gap: 10px;
+  width: 100%;
 }
-#topbar a { color: #b3c8e8; font-size: 11px; }
-#topbar a:hover { color: var(--yellow); text-decoration: none; }
+#topbar a { font-size: 11px;}
+#topbar a:hover { color: var(--orange); text-decoration: none; }
 
 /* ── Header ── */
 #header {
@@ -98,7 +96,6 @@ a:hover { text-decoration: underline; color: var(--orange); }
   display: flex;
   align-items: center;
   gap: 0;
-  border: 2px solid var(--blue-dark);
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--white);
@@ -216,8 +213,6 @@ a:hover { text-decoration: underline; color: var(--orange); }
   box-shadow: 0 1px 3px rgba(0,0,0,0.07);
 }
 .category-banner .cat-header {
-  background: linear-gradient(90deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
-  color: var(--white);
   padding: 7px 12px;
   font-size: 13px;
   font-weight: 700;
